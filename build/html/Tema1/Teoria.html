@@ -1,0 +1,378 @@
+
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>1.1. INTRODUCCIÓN &#8212; Implantación de Aplicaciones Web</title>
+    <link rel="stylesheet" href="../_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <script src="../_static/translations.js"></script>
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../search.html" />
+    <link rel="next" title="1.6. ACTIVIDADES PROPUESTAS" href="Actividades.html" />
+    <link rel="prev" title="1. CONCEPTOS DE APLICACIONES WEB" href="index.html" /> 
+  </head><body>
+      <div class="header" role="banner"><h1 class="heading"><a href="../index.html">
+          <span>Implantación de Aplicaciones Web</span></a></h1>
+        <h2 class="heading"><span>1.1. INTRODUCCIÓN</span></h2>
+      </div>
+      <div class="topnav" role="navigation" aria-label="top navigation">
+      
+        <p>
+        «&#160;&#160;<a href="index.html"><span class="section-number">1. </span>CONCEPTOS DE APLICACIONES WEB</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contenidos</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="Actividades.html"><span class="section-number">1.6. </span>ACTIVIDADES PROPUESTAS</a>&#160;&#160;»
+        </p>
+
+      </div>
+      <div class="content" role="main">
+        
+        
+  <div class="section" id="introduccion">
+<h1><span class="section-number">1.1. </span>INTRODUCCIÓN<a class="headerlink" href="#introduccion" title="Enlazar permanentemente con este título">¶</a></h1>
+<p>En el entorno del mercado actual, la competitividad y la rapidez de maniobra de una empresa son imprescindibles para su éxito. Para conseguirlo existe cada vez una mayor demanda de datos y, por tanto, más necesidad de gestionarlos. Esta demanda siempre ha estado patente en empresas y sociedades, pero en estos años se ha disparado debido al acceso multitudinario a las redes integradas en Internet y a la aparición de los dispositivos móviles que también requieren esa información.</p>
+<p>En informática se conoce como <strong>dato</strong> a cualquier <strong>elemento informativo que tenga relevancia para un usuario</strong>. Desde su nacimiento, la informática se ha encargado de proporcionar herramientas que faciliten la manipulación de los datos.
+Antes de la aparición de las aplicaciones informáticas, las empresas tenían como únicas herramientas de gestión de datos los ficheros con cajones, carpetas y fichas de cartón. En este proceso manual, el tiempo requerido para manipular estos datos era enorme. Pero la propia informática ha adaptado sus herramientas para que los elementos que el usuario utiliza en cuanto a manejo de datos se parezcan a los manuales. Por eso se sigue hablado de ficheros, formularios, carpetas, directorios,….</p>
+<p>La clientela fundamental del profesional informático es la empresa. La empresa se puede entender como un sistema de información formado por diversos objetos: el capital, los recursos humanos, los inmuebles, los servicios que presta, etc.</p>
+<p>Los sistemas de información actuales se basan en bases de datos (BD) y <strong>sistemas de bases de datos (SGBD)</strong> que se han convertido en elementos imprescindibles de la vida cotidiana de la sociedad moderna.</p>
+</div>
+<div class="section" id="definicion-de-base-de-datos">
+<h1><span class="section-number">1.2. </span>DEFINICIÓN DE BASE DE DATOS<a class="headerlink" href="#definicion-de-base-de-datos" title="Enlazar permanentemente con este título">¶</a></h1>
+<div class="section" id="id1">
+<h2><span class="section-number">1.2.1. </span>Definición de Base de Datos<a class="headerlink" href="#id1" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Cada día, la mayoría de nosotros nos encontramos con actividades que requieren algún tipo de interacción con una base de datos (ingreso en un banco, reserva de una entrada para el teatro, solicitud de una suscripción a una revista, compra de productos, …). Estas interacciones son ejemplos de lo que se llama aplicaciones tradicionales de bases de datos (básicamente información numérica o de texto), aunque los avances tecnológicos han permitido que también existan: bases de datos multimedia, sistemas de información geográfica (GIS), almacenes de datos, sistemas de proceso analítico on-line, …</p>
+<ul class="simple">
+<li><p>Una <strong>base de datos</strong> se entenderá como una colección de datos relacionados entre sí y que tienen un significado implícito.</p></li>
+<li><p>Por <strong>datos</strong> queremos decir hechos conocidos que pueden registrarse y que tienen un significado implícito.</p></li>
+</ul>
+<div class="admonition-ejemplo admonition">
+<p class="admonition-title">Ejemplo</p>
+<p>Una agenda con los nombres y teléfonos de un conjunto de personas conocidas es una base de datos, puesto que es una colección de datos relacionados con un significado implícito.</p>
+</div>
+<p>La definición presentada anteriormente hace referencia a dos elementos para que un conjunto de datos constituya una Base de Datos:</p>
+<ol class="arabic simple">
+<li><p><strong>Relaciones entre datos</strong>, tema que se tratará en las secciones siguientes.</p></li>
+<li><p><strong>Significado implícito</strong> de los datos que se atribuye dependiendo del contexto en que se utilizan los mismos. Por ejemplo, el dato fecha en una base de datos de VENTAS puede referirse a la fecha de emisión de las facturas, mientras que si la base de datos es de MÚSICA quizás corresponda a la fecha en que se grabó un tema musical. Es decir, el significado de un dato, depende de la BD que lo contenga.</p></li>
+</ol>
+<p>Para manipular y gestionar las bases de datos surgieron herramientas software denominadas: sistemas gestores de bases de datos (SGBD en lo sucesivo) sobre los que se profundizará en las siguientes secciones.</p>
+</div>
+</div>
+<div class="section" id="evolucion-historica-y-tipos-de-bd">
+<h1><span class="section-number">1.3. </span>EVOLUCIÓN HISTÓRICA Y TIPOS DE BD<a class="headerlink" href="#evolucion-historica-y-tipos-de-bd" title="Enlazar permanentemente con este título">¶</a></h1>
+<div class="section" id="id2">
+<h2><span class="section-number">1.3.1. </span>Introducción<a class="headerlink" href="#id2" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Los predecesores de los sistemas gestores de bases de datos fueron los sistemas gestores de ficheros o sistemas de archivos tradicionales.</p>
+<ol class="arabic simple">
+<li><p><strong>Archivos tradicionales</strong>. Consiste en almacenar los datos en archivos individuales, exclusivos para cada aplicación particular. En este sistema los datos pueden ser redundantes (repetidos innecesariamente) y la actualización de los archivos es más lenta que en una base de datos.</p></li>
+<li><p><strong>Base de datos</strong>. Es un almacenamiento de datos formalmente definido, controlado centralmente para intentar servir a múltiples y diferentes aplicaciones. La base de datos es una fuente de datos que son compartidos por numerosos usuarios para diversas aplicaciones.</p></li>
+</ol>
+<p>Así, en un Sistema de archivos tradicional la información está dispersa en varios ficheros de datos y existe un cierto número de programas que los recuperan y agrupan.
+Aunque los sistemas de ficheros o archivos supusieron un gran avance sobre los sistemas manuales, tienen inconvenientes bastante importantes que se solventaron, en gran medida, con la aparición de los sistemas de bases de datos.</p>
+</div>
+<div class="section" id="evolucion-y-tipos-de-base-de-datos">
+<h2><span class="section-number">1.3.2. </span>Evolución y tipos de base de datos<a class="headerlink" href="#evolucion-y-tipos-de-base-de-datos" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Coincidiendo con la evolución histórica de las bases de datos éstas han utilizado distintos modelos:</p>
+<ul class="simple">
+<li><p>Jerárquicos</p></li>
+<li><p>En red.</p></li>
+<li><p><strong>Relacionales</strong>.</p></li>
+<li><p>Multidimensionales.</p></li>
+<li><p>De objetos.</p></li>
+</ul>
+<div class="section" id="bases-de-datos-con-estructura-jerarquica">
+<h3><span class="section-number">1.3.2.1. </span>Bases de Datos con estructura jerárquica<a class="headerlink" href="#bases-de-datos-con-estructura-jerarquica" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>La estructura jerárquica fue usada en las primeras BD. Las relaciones entre registros forman una estructura en árbol.
+Actualmente las bases de datos jerárquicas más utilizadas son IMS de IBM y el Registro de Windows de Microsoft.</p>
+<img alt="../_images/tema1-001.png" src="../_images/tema1-001.png" />
+</div>
+<div class="section" id="bases-de-datos-con-estructura-en-red">
+<h3><span class="section-number">1.3.2.2. </span>Bases de Datos con estructura en red<a class="headerlink" href="#bases-de-datos-con-estructura-en-red" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Esta estructura contiene relaciones más complejas que las jerárquicas. Admite relaciones de cada registro con varios que se pueden seguir por distintos caminos.</p>
+<img alt="../_images/tema1-002.png" src="../_images/tema1-002.png" />
+<p>El inventor de este modelo fue Charles Bachman, y el estándar fue publicado en 1969 por CODASYL.</p>
+</div>
+<div class="section" id="bases-de-datos-con-estructura-relacional">
+<h3><span class="section-number">1.3.2.3. </span>Bases de Datos con estructura relacional<a class="headerlink" href="#bases-de-datos-con-estructura-relacional" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>La estructura relacional es la más extendida hoy en día. Almacena los datos en <strong>filas o registros</strong> (tuplas) y <strong>columnas o campos</strong> (atributos). Estas tablas pueden estar conectadas entre sí por claves comunes.</p>
+<img alt="../_images/tema1-003.png" src="../_images/tema1-003.png" />
+<p><strong>En este libro nos centramos en el estudio de bases de datos relacionales.</strong></p>
+</div>
+<div class="section" id="bases-de-datos-con-estructura-multidimensional">
+<h3><span class="section-number">1.3.2.4. </span>Bases de Datos con estructura multidimensional<a class="headerlink" href="#bases-de-datos-con-estructura-multidimensional" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>La estructura multidimensional tiene parecidos a la del modelo relacional, pero en vez de las dos dimensiones filas-columnas, tiene N dimensiones. Esta estructura ofrece el aspecto de una hoja de cálculo.</p>
+<img alt="../_images/tema1-004.png" src="../_images/tema1-004.png" />
+</div>
+<div class="section" id="bases-de-datos-con-estructura-orientada-a-objetos">
+<h3><span class="section-number">1.3.2.5. </span>Bases de Datos con estructura orientada a objetos<a class="headerlink" href="#bases-de-datos-con-estructura-orientada-a-objetos" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>La estructura orientada a objetos está diseñada siguiendo el paradigma de los lenguajes orientados a objetos. De este modo soporta los tipos de datos gráficos, imágenes, voz y texto de manera natural. Esta estructura tiene gran difusión en aplicaciones web para aplicaciones multimedia.</p>
+<img alt="../_images/tema1-005.png" src="../_images/tema1-005.png" />
+</div>
+</div>
+<div class="section" id="sistemas-de-ficheros-tradicionales">
+<h2><span class="section-number">1.3.3. </span>Sistemas de ficheros tradicionales<a class="headerlink" href="#sistemas-de-ficheros-tradicionales" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>En estos sistemas, cada programa almacenaba y utilizaba sus propios datos de forma un tanto caótica.
+La única ventaja que conlleva esto es que los procesos son independientes, por lo que la modificación de uno no afecta al resto.</p>
+<p>Pero tiene grandes inconvenientes:</p>
+<ul class="simple">
+<li><p><strong>Datos redundantes</strong>. Ya que se repiten continuamente.</p></li>
+<li><p><strong>Coste de almacenamiento elevado</strong>. Al almacenarse varias veces el mismo dato en distintas aplicaciones, se requiere más espacio en los discos.</p></li>
+<li><p><strong>Tiempos de procesamiento elevados</strong>. Al no poder optimizar el espacio de almacenamiento.</p></li>
+<li><p><strong>Probabilidad alta de inconsistencia en los datos</strong>. Ya que un proceso cambia sus datos y no el resto. Por lo que el mismo dato puede tener valores distintos según qué aplicación acceda a él.</p></li>
+<li><p><strong>Difícil modificación en los datos</strong>. Debido a la probabilidad de inconsistencia, cada modificación se debe repetir en todas las copias del dato (algo que normalmente es imposible).</p></li>
+</ul>
+<p>En la siguiente figura se muestra un sistema de información basado en ficheros. En ella se ve que la información aparece inconexa y redundante.</p>
+<img alt="../_images/tema1-006.png" src="../_images/tema1-006.png" />
+</div>
+<div class="section" id="sistemas-de-base-de-datos-relacional">
+<h2><span class="section-number">1.3.4. </span>Sistemas de base de datos relacional<a class="headerlink" href="#sistemas-de-base-de-datos-relacional" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>En este tipo de sistemas los datos se centralizan en una base de datos común a todas las aplicaciones. Estos serán los sistemas que estudiaremos en este curso.</p>
+<p>Sus <strong>ventajas</strong> son las siguientes:</p>
+<ul class="simple">
+<li><p><strong>Menor redundancia</strong>. No hace falta tanta repetición de datos. Aunque, sólo los buenos diseños de datos tienen poca redundancia.</p></li>
+<li><p><strong>Menor espacio de almacenamiento</strong>. Gracias a una mejor estructuración de los datos.</p></li>
+<li><p><strong>Acceso a los datos más eficiente</strong>. La organización de los datos produce un resultado más óptimo en rendimiento.</p></li>
+<li><p><strong>Datos más documentados</strong>. Gracias a los metadatos que permiten describir la información de la base de datos.</p></li>
+<li><p><strong>Independencia de los datos y los programas y procesos</strong>. Esto permite modificar los datos sin modificar el código de las aplicaciones.</p></li>
+<li><p><strong>Integridad de los datos</strong>. Mayor dificultad de perder los datos o de realizar incoherencias con ellos.</p></li>
+<li><p><strong>Mayor seguridad en los datos</strong>. Al limitar el acceso a ciertos usuarios.</p></li>
+</ul>
+<p>Como contrapartida encontramos los siguientes <strong>inconvenientes</strong>:</p>
+<ul class="simple">
+<li><p><strong>Instalación costosa</strong>. El control y administración de bases de datos requiere de un software y hardware potente.</p></li>
+<li><p><strong>Requiere personal cualificado</strong>. Debido a la dificultad de manejo de este tipo de sistemas.</p></li>
+<li><p><strong>Implantación larga y difícil</strong>. Debido a los puntos anteriores. La adaptación del personal es mucho más complicada y lleva bastante tiempo.</p></li>
+</ul>
+<p>En la siguiente figura se muestra un sistema de información basado en bases de datos. La información está relacionada y no es redundante.</p>
+<img alt="../_images/tema1-007.png" src="../_images/tema1-007.png" />
+</div>
+<div class="section" id="ejemplo-de-archivos-tradicionales">
+<h2><span class="section-number">1.3.5. </span>Ejemplo de archivos tradicionales<a class="headerlink" href="#ejemplo-de-archivos-tradicionales" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Se cuenta con dos archivos: CLIENTES y FACTURAS.</p>
+<p>El primer archivo tiene los datos básicos de los clientes, mientras que en el segundo se almacenan las ventas realizadas. Al emitir cada factura se ingresan nuevamente los datos num, nombre, domicilio.</p>
+<table class="colwidths-given docutils align-default" id="id3">
+<caption><span class="caption-text">CLIENTES</span><a class="headerlink" href="#id3" title="Enlace permanente a esta tabla">¶</a></caption>
+<colgroup>
+<col style="width: 8%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Num</p></th>
+<th class="head"><p>Nombre</p></th>
+<th class="head"><p>Dirección</p></th>
+<th class="head"><p>Teléfono</p></th>
+<th class="head"><p>FechaNacimiento</p></th>
+<th class="head"><p>e-mail</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1225</p></td>
+<td><p>Juan García</p></td>
+<td><p>Guaná 1202</p></td>
+<td><p>985674863</p></td>
+<td><p>13/08/1972</p></td>
+<td><p><a class="reference external" href="mailto:jgarcia&#37;&#52;&#48;adinet&#46;com">jgarcia<span>&#64;</span>adinet<span>&#46;</span>com</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>1226</p></td>
+<td><p>Fernando Martínez</p></td>
+<td><p>Rincón 876</p></td>
+<td><p>984568643</p></td>
+<td><p>23/02/1987</p></td>
+<td><p><a class="reference external" href="mailto:fmar&#37;&#52;&#48;gmail&#46;com">fmar<span>&#64;</span>gmail<span>&#46;</span>com</a></p></td>
+</tr>
+<tr class="row-even"><td><p>…</p></td>
+<td><p>…</p></td>
+<td><p>…</p></td>
+<td><p>…</p></td>
+<td><p>…</p></td>
+<td><p>…</p></td>
+</tr>
+</tbody>
+</table>
+<table class="colwidths-given docutils align-default" id="id4">
+<caption><span class="caption-text">FACTURAS</span><a class="headerlink" href="#id4" title="Enlace permanente a esta tabla">¶</a></caption>
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 30%" />
+<col style="width: 30%" />
+<col style="width: 20%" />
+<col style="width: 10%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Num</p></th>
+<th class="head"><p>Nombre</p></th>
+<th class="head"><p>Dirección</p></th>
+<th class="head"><p>Producto</p></th>
+<th class="head"><p>Precio</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1225</p></td>
+<td><p>Joaquín García</p></td>
+<td><p>Guaná 1202</p></td>
+<td><p>Azulejos</p></td>
+<td><p>1250</p></td>
+</tr>
+<tr class="row-odd"><td><p>1226</p></td>
+<td><p>Fernando Martínez</p></td>
+<td><p>Rincón 876</p></td>
+<td><p>Pintura</p></td>
+<td><p>900</p></td>
+</tr>
+<tr class="row-even"><td><p>…</p></td>
+<td><p>…</p></td>
+<td><p>…</p></td>
+<td><p>…</p></td>
+<td><p>…</p></td>
+</tr>
+</tbody>
+</table>
+<p>Desventajas:</p>
+<ul class="simple">
+<li><p>Se presentan <strong>redundancias de datos</strong> (datos repetidos innecesariamente: nombre, dirección). Se duplican esfuerzos.</p></li>
+<li><p>Se pueden producir <strong>contradicciones entre los datos</strong>, si por ejemplo se ingresan nombres diferentes para un mismo cliente (Juan por Joaquín).</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="conceptos-basicos-de-una-bd">
+<h1><span class="section-number">1.4. </span>CONCEPTOS BÁSICOS DE UNA BD<a class="headerlink" href="#conceptos-basicos-de-una-bd" title="Enlazar permanentemente con este título">¶</a></h1>
+<p>Resulta fundamental para un Técnico Superior en Informática que conozca los siguientes conceptos básicos:</p>
+<div class="section" id="datos">
+<h2><span class="section-number">1.4.1. </span>Datos<a class="headerlink" href="#datos" title="Enlazar permanentemente con este título">¶</a></h2>
+<blockquote class="epigraph">
+<div><dl class="simple">
+<dt><em>Datos son hechos conocidos que pueden registrarse y que tienen un significado implícito.</em></dt><dd><p>– <strong>Ramez Elmasri y Shamkant B. Navathe</strong></p>
+</dd>
+</dl>
+</div></blockquote>
+<div class="admonition-ejemplo admonition">
+<p class="admonition-title">Ejemplo</p>
+<p>Pueden constituir datos los nombres, números telefónicos y direcciones de personas que conocemos.</p>
+</div>
+<img alt="../_images/tema1-008.png" src="../_images/tema1-008.png" />
+</div>
+<div class="section" id="entidades">
+<h2><span class="section-number">1.4.2. </span>Entidades<a class="headerlink" href="#entidades" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Una entidad es todo aquello de lo cual interesa guardar datos, por ejemplo:</p>
+<img alt="../_images/tema1-009.png" src="../_images/tema1-009.png" />
+</div>
+<div class="section" id="claves-primarias-y-claves-foraneas-relaciones">
+<h2><span class="section-number">1.4.3. </span>Claves primarias y claves foráneas. Relaciones<a class="headerlink" href="#claves-primarias-y-claves-foraneas-relaciones" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Cada entidad tiene una <strong>clave primaria</strong> o <strong>campo clave</strong> o <strong>llave</strong> que identifica unívocamente al conjunto de datos.
+Cuando en una entidad figura la clave primaria de otra entidad, ésta se denomina <strong>clave foránea</strong> o <strong>clave ajena</strong>.
+Las entidades se <strong>relacionan</strong> entre sí a través de las claves foráneas.</p>
+<img alt="../_images/tema1-010.png" src="../_images/tema1-010.png" />
+<p><strong>CLAVES PRIMARIAS</strong></p>
+<ul class="simple">
+<li><p><strong>Código Cliente</strong> es la clave primaria de <strong>CLIENTES</strong>. A cada cliente se le asocia un código y a cada código le corresponde un cliente.</p></li>
+<li><p><strong>Número Factura</strong> es clave primaria de <strong>FACTURAS</strong>.</p></li>
+<li><p><strong>Código Producto</strong> es clave primaria de <strong>PRODUCTOS</strong>.</p></li>
+</ul>
+<p><strong>CLAVES FORÁNEAS</strong></p>
+<ul class="simple">
+<li><p>En <strong>FACTURAS</strong>, son claves foráneas <strong>Código Cliente</strong> y <strong>Código Producto</strong>. CLIENTES se relaciona con FACTURAS a través del Código Cliente que figura en ambas tablas y con PRODUCTOS mediante el Código Producto.</p></li>
+</ul>
+</div>
+<div class="section" id="restricciones-de-integridad-referencial">
+<h2><span class="section-number">1.4.4. </span>Restricciones de integridad referencial<a class="headerlink" href="#restricciones-de-integridad-referencial" title="Enlazar permanentemente con este título">¶</a></h2>
+<ul class="simple">
+<li><p>Código Cliente en Facturas debe cumplir que exista en Clientes y que sea clave primaria</p></li>
+<li><p>Código Producto en Facturas debe cumplir que exista en Productos y que sea clave primaria</p></li>
+</ul>
+<p>Retomando la Definición de Base de Datos, la cual señala que ésta “<em>…es un conjunto de datos relacionados entre sí y que tienen un significado implícito</em>”, se observa en la imagen que los datos de las tablas se relacionan a través de las claves y que éstos tienen el significado implícito que se les atribuye en dicho contexto. Así, por ejemplo, el significado del dato Nombre se refiere al del CLIENTE, el de Fecha emisión a la de la FACTURAS y el de Descripción a la del PRODUCTO.</p>
+</div>
+<div class="section" id="metadatos">
+<h2><span class="section-number">1.4.5. </span>Metadatos<a class="headerlink" href="#metadatos" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Metadatos son <strong>datos acerca de los datos</strong> presentes en la base de datos.</p>
+<p>Por ejemplo:</p>
+<ul class="simple">
+<li><p>qué tipo de datos se van a almacenar (si son texto o números o fechas …)</p></li>
+<li><p>qué nombre se le da a cada dato (nombre, apellidos, fecha, precio, edad,…)</p></li>
+<li><p>cómo están agrupados los datos</p></li>
+<li><p>cómo se relacionan,….</p></li>
+</ul>
+<p>Ejemplo de Metadatos:</p>
+<img alt="../_images/tema1-011.png" src="../_images/tema1-011.png" />
+</div>
+<div class="section" id="otros-conceptos-sobre-bases-de-datos">
+<h2><span class="section-number">1.4.6. </span>Otros conceptos sobre Bases de Datos<a class="headerlink" href="#otros-conceptos-sobre-bases-de-datos" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Además de los conceptos básicos anteriores, a modo de aclarar algunos de los componentes que se pueden encontrar en una base de datos, y que se verán en las próximas unidades, se definen los siguientes conceptos:</p>
+<ul class="simple">
+<li><p><strong>Tabla</strong>: Es un conjunto de filas y columnas bajo un mismo nombre que representa el conjunto de valores almacenados para una serie de datos. Por ejemplo,la  información de todos los clientes de una BD se almacenarán en una tabla llamada CLIENTES.</p></li>
+<li><p><strong>Campo</strong>: Cada una de las <strong>columnas</strong> de una tabla. Identifica una familia de datos. Por ejemplo, el campo fechaNacimiento representa las fechas de nacimiento de todos los clientes que contiene una tabla CLIENTES.</p></li>
+<li><p><strong>Registro</strong>: Corresponde a cada una de las <strong>filas</strong> de la tabla. También se llaman tuplas. Por ejemplo en la siguiente tabla CLIENTES, observamos dos registros, que corresponden a la información sobre los clientes Juan García y Fernándo Martínez:</p></li>
+</ul>
+<img alt="../_images/tema1-012.png" src="../_images/tema1-012.png" />
+<ul class="simple">
+<li><p><strong>Tipo de Dato</strong>: El tipo de dato indica la naturaleza del campo. Así, se puede tener datos numéricos, que son aquellos con los que se pueden realizar cálculos aritméticos (sumas, restas, multiplicaciones…), los datos alfanuméricos, que son los que contienen caracteres alfabéticos y números…</p></li>
+<li><p><strong>Consulta</strong>: Es una instrucción para hacer peticiones a una BD.</p></li>
+<li><p><strong>Índice</strong>: Es una estructura que almacena los campos clave de una tabla, organizándolos para hacer más fácil encontrar y ordenar los registros.</p></li>
+<li><p><strong>Vista</strong>: Se obtienen al guardar una consulta de una o varias tablas. De esta forma se obtiene una tabla virtual, es decir, no está almacenada en los dispositivos de almacenamiento del ordenador, aunque sí se almacena su definición.</p></li>
+<li><p><strong>Informe</strong>: Es un listado ordenado de los campos y registros seleccionados en un formato fácil de leer. Por ejemplo, un informe de las facturas impagadas del mes de enero ordenadas por nombre de cliente.</p></li>
+<li><p><strong>Guiones o scripts</strong>: Son un conjunto de instrucciones, que ejecutadas de forma ordenada, realizan operaciones avanzadas o mantenimiento de los datos almacenados en la BD.</p></li>
+<li><p><strong>Procedimientos</strong>: Son un tipo especial de script que están almacenados en la BD y forman parte de su esquema.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="sistemas-de-gestion-de-bases-de-datos-tipos">
+<h1><span class="section-number">1.5. </span>SISTEMAS DE GESTIÓN DE BASES DE DATOS: TIPOS<a class="headerlink" href="#sistemas-de-gestion-de-bases-de-datos-tipos" title="Enlazar permanentemente con este título">¶</a></h1>
+<div class="section" id="sistema-gestor-de-bases-de-datos">
+<h2><span class="section-number">1.5.1. </span>Sistema Gestor de Bases de Datos<a class="headerlink" href="#sistema-gestor-de-bases-de-datos" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Un sistema gestor de bases de datos (SGBD) es una aplicación que permite a los usuarios definir, crear y mantener una base de datos, y proporciona acceso controlado a la misma.</p>
+<p>En general, un SGBD proporciona los siguientes servicios:</p>
+<ul class="simple">
+<li><p>Permite la <strong>definición de la base de datos</strong> mediante el lenguaje de definición de datos (<strong>DDL – Data Description Language</strong>). Este lenguaje permite especificar la estructura y el tipo de los datos, así como las restricciones sobre los datos. Todo esto se almacenará en la base de datos.</p></li>
+<li><p>Permite la <strong>inserción, actualización, eliminación y consulta de datos</strong> mediante el lenguaje de manejo o manipulación de datos (<strong>DML - Data Manipulation Language</strong>).</p></li>
+<li><p>Proporciona un acceso controlado a la base de datos mediante:</p>
+<ul>
+<li><p>Un sistema de seguridad, de modo que los usuarios no autorizados no puedan acceder a la base de datos, mediante el lenguaje de control de datos (<strong>DCL - Data Control Language</strong>);</p></li>
+<li><p>Un sistema de integridad que mantiene la integridad y la consistencia de los datos;</p></li>
+<li><p>Un sistema de control de concurrencia que permite el acceso compartido a la base de datos;</p></li>
+<li><p>Un sistema de control de recuperación que restablece la base de datos después de que se produzca un fallo del hardware o del software;</p></li>
+<li><p><strong>Un diccionario de datos o catálogo</strong> accesible por el usuario que contiene la descripción de los datos de la base de datos.</p></li>
+</ul>
+</li>
+</ul>
+<p>La principal herramienta de un SGBD es la interfaz de programación con el usuario. Esta interfaz consiste en un lenguaje muy sencillo mediante el cual el usuario interactua con el servidor. Este lenguaje comúnmente se denomina <strong>SQL, Structure Query Language</strong>, está estandarizado por la ISO 1, es decir, todas las BD que soporten SQL deben tener la misma sintaxis a la hora de aplicar el lenguaje.</p>
+</div>
+<div class="section" id="tipos-de-sgbd">
+<h2><span class="section-number">1.5.2. </span>Tipos de SGBD<a class="headerlink" href="#tipos-de-sgbd" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Los SGBD se pueden clasificar según las BD que gestionan (jerárquicas, relacionales, orientadas a objetos,…), pero como actualmente la mayoría de los SGBD integran múltiples filosofías, los clasificaremos según su capacidad y potencia del propio gestor, resultado los siguientes SGBD:</p>
+<ul class="simple">
+<li><p><strong>SGBD ofimáticos</strong>: manipulas BD pequeñas orientadas a almacenar datos domésticos o de pequeñas empresas. Ejemplos típicos son Microsoft ACCESS y LibreOffice Base.</p></li>
+<li><p><strong>SGBD corporativos</strong>: tienen la capacidad de gestionar BD enormes, de medianas o grandes empresas con una carga de datos y transacciones que requieren de un servidor de gran capacidad. Un ejemplo típico de BD corporativas es ORACLE, actualmente junto de DB2 el servidor de BD más potente del mercado (también el más caro). Nosotros para nuestro aprendizaje utilizamos una versión gratuita con fines educativos, que aunque bastante limitada, nos sirve para introducirnos en la filosofía de ORACLE.</p></li>
+</ul>
+</div>
+</div>
+
+
+      </div>
+      <div class="bottomnav" role="navigation" aria-label="bottom navigation">
+      
+        <p>
+        «&#160;&#160;<a href="index.html"><span class="section-number">1. </span>CONCEPTOS DE APLICACIONES WEB</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contenidos</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="Actividades.html"><span class="section-number">1.6. </span>ACTIVIDADES PROPUESTAS</a>&#160;&#160;»
+        </p>
+
+      </div>
+
+    <div class="footer" role="contentinfo">
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.2.1.
+    </div>
+  </body>
+</html>

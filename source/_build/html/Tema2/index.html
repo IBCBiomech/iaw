@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2. DISEÑO DE MODELOS LÓGICOS NORMALIZADOS &#8212; Implantación de Aplicaciones Web</title>
+    <link rel="stylesheet" href="../_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <script src="../_static/translations.js"></script>
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../search.html" />
+    <link rel="next" title="2.1. INTRODUCCIÓN" href="Teoria.html" />
+    <link rel="prev" title="1.6. ACTIVIDADES PROPUESTAS" href="../Tema1/Actividades.html" /> 
+  </head><body>
+      <div class="header" role="banner"><h1 class="heading"><a href="../index.html">
+          <span>Implantación de Aplicaciones Web</span></a></h1>
+        <h2 class="heading"><span>2. DISEÑO DE MODELOS LÓGICOS NORMALIZADOS</span></h2>
+      </div>
+      <div class="topnav" role="navigation" aria-label="top navigation">
+      
+        <p>
+        «&#160;&#160;<a href="../Tema1/Actividades.html"><span class="section-number">1.6. </span>ACTIVIDADES PROPUESTAS</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contenidos</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="Teoria.html"><span class="section-number">2.1. </span>INTRODUCCIÓN</a>&#160;&#160;»
+        </p>
+
+      </div>
+      <div class="content" role="main">
+        
+        
+  <div class="section" id="diseno-de-modelos-logicos-normalizados">
+<h1><span class="section-number">2. </span>DISEÑO DE MODELOS LÓGICOS NORMALIZADOS<a class="headerlink" href="#diseno-de-modelos-logicos-normalizados" title="Enlazar permanentemente con este título">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Teoria.html">2.1. INTRODUCCIÓN</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Teoria.html#diseno-de-bd">2.2. DISEÑO DE BD</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Teoria.html#fase-de-analisis-especificacion-de-requisitos-software-e-r-s">2.2.1. Fase de Análisis: Especificación de requisitos Software (E.R.S.)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Teoria.html#fase-1-del-diseno-diseno-conceptual-modelo-entidad-relacion-e-r">2.2.2. Fase 1 del diseño. Diseño Conceptual: Modelo Entidad/Relación (E/R)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Teoria.html#fase-2-del-diseno-diseno-logico-modelo-relacional">2.2.3. Fase 2 del diseño. Diseño Lógico: Modelo Relacional</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Teoria.html#fase-3-del-diseno-diseno-fisico-modelo-fisico">2.2.4. Fase 3 del diseño. Diseño Físico: Modelo Físico</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Teoria.html#modelo-entidad-relacion">2.3. MODELO ENTIDAD/RELACIÓN</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Teoria.html#entidades">2.3.1. Entidades</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Teoria.html#atributos">2.3.2. Atributos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Teoria.html#relaciones">2.3.3. Relaciones</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Teoria.html#modelo-e-r-extendido">2.4. MODELO E/R EXTENDIDO</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Teoria.html#relaciones-de-jerarquia">2.4.1. Relaciones de Jerarquía</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Teoria.html#modelo-relacional">2.5. MODELO RELACIONAL</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Teoria.html#id1">2.5.1. Introducción</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Teoria.html#estructura-de-datos-relacional">2.5.2. Estructura de datos relacional</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Teoria.html#elementos-y-propiedades-del-modelo-relacional">2.5.3. Elementos y propiedades del modelo relacional</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Teoria.html#transformacion-de-un-esquema-e-r-a-esquema-relacional">2.5.4. Transformación de un esquema E/R a esquema relacional</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Teoria.html#normalizacion">2.6. NORMALIZACIÓN</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Teoria.html#primera-forma-normal-1fn">2.6.1. Primera Forma Normal: 1FN</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Teoria.html#segunda-forma-normal-2fn">2.6.2. Segunda Forma Normal: 2FN</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Teoria.html#tercera-forma-normal-3fn">2.6.3. Tercera Forma Normal: 3FN</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Teoria.html#forma-normal-de-boyce-codd-fnbc">2.6.4. Forma Normal de Boyce-Codd: FNBC</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Teoria.html#cuarta-forma-normal-4fn">2.6.5. Cuarta Forma Normal: 4FN</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Teoria.html#quinta-forma-normal-5fn">2.6.6. Quinta Forma Normal: 5FN</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Actividades.html">2.7. ACTIVIDADES PROPUESTAS</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Actividades.html#test">2.7.1. Test</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Actividades.html#cuestiones">2.7.2. Cuestiones</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Actividades.html#practicas">2.7.3. Prácticas</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+
+      </div>
+      <div class="bottomnav" role="navigation" aria-label="bottom navigation">
+      
+        <p>
+        «&#160;&#160;<a href="../Tema1/Actividades.html"><span class="section-number">1.6. </span>ACTIVIDADES PROPUESTAS</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contenidos</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="Teoria.html"><span class="section-number">2.1. </span>INTRODUCCIÓN</a>&#160;&#160;»
+        </p>
+
+      </div>
+
+    <div class="footer" role="contentinfo">
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.2.1.
+    </div>
+  </body>
+</html>
