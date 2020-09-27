@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>2.1. INTRODUCCIÓN &#8212; Implantación de Aplicaciones Web</title>
+    <title>2.1. ELEMENTOS DE UN ENTORNO DESARROLLO &#8212; Implantación de Aplicaciones Web</title>
     <link rel="stylesheet" href="../_static/haiku.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -21,7 +21,7 @@
   </head><body>
       <div class="header" role="banner"><h1 class="heading"><a href="../index.html">
           <span>Implantación de Aplicaciones Web</span></a></h1>
-        <h2 class="heading"><span>2.1. INTRODUCCIÓN</span></h2>
+        <h2 class="heading"><span>2.1. ELEMENTOS DE UN ENTORNO DESARROLLO</span></h2>
       </div>
       <div class="topnav" role="navigation" aria-label="top navigation">
       
@@ -37,16 +37,14 @@
       <div class="content" role="main">
         
         
-  <div class="section" id="introduccion">
-<h1><span class="section-number">2.1. </span>INTRODUCCIÓN<a class="headerlink" href="#introduccion" title="Enlazar permanentemente con este título">¶</a></h1>
-<p>En este tema veremos como hacer el diseño conceptual y lógico de una base de datos.
-Empezaremos elaborando el modelo conceptual usando diagramas Entidad-Relación y Entidad-Relación extendidos. Este diseño es de más alto nivel, más próximo al usuario y más alejado del diseño físico de la BD.
-A continuación, a partir del modelo Entidad-Relación, procederemos a generar el modelo relacional, el cual ya se halla muy próximo al modelo físico de BD. Veremos las reglas de transformación que hemos de seguir para ello.
-Por último deberemos normalizar las tablas obtenidas para evitar redundancias.
-Resumiendo, los 2 modelos lógicos, de mayor a menor nivel de abstracción, que veremos en este tema son:</p>
+  <div class="section" id="elementos-de-un-entorno-desarrollo">
+<h1><span class="section-number">2.1. </span>ELEMENTOS DE UN ENTORNO DESARROLLO<a class="headerlink" href="#elementos-de-un-entorno-desarrollo" title="Enlazar permanentemente con este título">¶</a></h1>
+<p>Elementos necesarios para una aplicación web (servidor o local):</p>
 <ul class="simple">
-<li><p><strong>Modelo Entidad-Relación (extendido)</strong></p></li>
-<li><p><strong>Modelo Relacional</strong></p></li>
+<li><p><strong>Servidor Web</strong>: IIS (Sólo para Windows), Apache, Nginx, etc.</p></li>
+<li><p><strong>Instalar servidor de aplicaciones web</strong>: qué tipo de lenguaje se va a utilizar: PHP, Java, Python, .Net, JavaScript, etc. Existen varios ejemplos: Apache tiene que tener el módulo PHP activado, Tomcat EE para Java EE, Node.js para Javascript, etc.</p></li>
+<li><p><strong>Instalar un servidor de bases de datos o SGBD</strong>: MySQL, MariaDB, Oracle DB, Postgre, etc.</p></li>
+<li><p><strong>Conector de BDD:</strong> es necesario instalar también módulos para que el lenguaje de Servidor se comunique con los Datos: php-msyql, ODBC para .Net, JDBC para Java, etc.</p></li>
 </ul>
 <p>En el siguiente tema, realizaremos el diseño físico de la BD a partir del modelo relacional.</p>
 </div>
@@ -274,8 +272,8 @@ El ejemplo anterior quedaría del modo siguiente utilizando símbolos del E/R ex
 </div>
 <div class="section" id="modelo-relacional">
 <h1><span class="section-number">2.5. </span>MODELO RELACIONAL<a class="headerlink" href="#modelo-relacional" title="Enlazar permanentemente con este título">¶</a></h1>
-<div class="section" id="id1">
-<h2><span class="section-number">2.5.1. </span>Introducción<a class="headerlink" href="#id1" title="Enlazar permanentemente con este título">¶</a></h2>
+<div class="section" id="introduccion">
+<h2><span class="section-number">2.5.1. </span>Introducción<a class="headerlink" href="#introduccion" title="Enlazar permanentemente con este título">¶</a></h2>
 <p>Los SGBD se pueden clasificar de acuerdo con el modelo lógico que soportan, el número de usuarios, el número de puestos, el coste… La clasificación más importante de los SGBD se basa en el modelo lógico, siendo los principales modelos que se utilizan en el mercado los siguientes: Jerárquico, en Red, Relacional y Orientado a Objetos.</p>
 <p>La mayoría de los SGBD comerciales actuales están basados en el modelo relacional, en el que nos vamos a centrar, mientras que los sistemas más antiguos estaban basados en el modelo de red o el modelo jerárquico.</p>
 <p>Los motivos del éxito del modelo relacional son fundamentalmente dos:
@@ -285,8 +283,8 @@ Ofrecen sistemas simples y eficaces para representar y manipular los datos.
 </div>
 <div class="section" id="estructura-de-datos-relacional">
 <h2><span class="section-number">2.5.2. </span>Estructura de datos relacional<a class="headerlink" href="#estructura-de-datos-relacional" title="Enlazar permanentemente con este título">¶</a></h2>
-<table class="docutils align-default" id="id3">
-<caption><span class="caption-text">PERSONAS</span><a class="headerlink" href="#id3" title="Enlace permanente a esta tabla">¶</a></caption>
+<table class="docutils align-default" id="id2">
+<caption><span class="caption-text">PERSONAS</span><a class="headerlink" href="#id2" title="Enlace permanente a esta tabla">¶</a></caption>
 <colgroup>
 <col style="width: 17%" />
 <col style="width: 17%" />
@@ -371,8 +369,8 @@ Ofrecen sistemas simples y eficaces para representar y manipular los datos.
 <p class="admonition-title">Importante</p>
 <p>Se deben elaborar los diagramas relacionales de tal forma que, posteriormente al introducir datos, <strong>no quede ninguna clave foránea a valor nulo (NULL)</strong>. Para ello se siguen las reglas que se muestran a continuación.</p>
 </div>
-<div class="section" id="id2">
-<h3><span class="section-number">2.5.4.1. </span>Entidades<a class="headerlink" href="#id2" title="Enlazar permanentemente con este título">¶</a></h3>
+<div class="section" id="id1">
+<h3><span class="section-number">2.5.4.1. </span>Entidades<a class="headerlink" href="#id1" title="Enlazar permanentemente con este título">¶</a></h3>
 <p>Cada entidad se transforma en una tabla. El identificador (o identificadores) de la entidad pasa a ser la clave principal de la relación y aparece subrayada o con la indicación: <strong>PK (Primary Key)</strong>. Si hay clave alternativa esta se pone en «negrita».</p>
 <p>Ejemplo: Todas las entidades del ejemplo anterior generan tabla. En concreto, la entidad AULA genera la siguiente tabla:</p>
 <img alt="../_images/tema2-050.png" src="../_images/tema2-050.png" />
@@ -475,8 +473,8 @@ Ejemplo: CursoBachillerato →→ Modalidad. Para primer curso siempre va a apar
 <h2><span class="section-number">2.6.1. </span>Primera Forma Normal: 1FN<a class="headerlink" href="#primera-forma-normal-1fn" title="Enlazar permanentemente con este título">¶</a></h2>
 <p>Una Relación está en 1FN si y sólo si cada atributo es atómico.</p>
 <p>Ejemplo: Supongamos que tenemos la siguiente tabla con datos de alumnado de un centro de enseñanza secundaria.</p>
-<table class="docutils align-default" id="id4">
-<caption><span class="caption-text">Alumnos</span><a class="headerlink" href="#id4" title="Enlace permanente a esta tabla">¶</a></caption>
+<table class="docutils align-default" id="id3">
+<caption><span class="caption-text">Alumnos</span><a class="headerlink" href="#id3" title="Enlace permanente a esta tabla">¶</a></caption>
 <colgroup>
 <col style="width: 13%" />
 <col style="width: 13%" />
@@ -547,8 +545,8 @@ Ejemplo: CursoBachillerato →→ Modalidad. Para primer curso siempre va a apar
 </tbody>
 </table>
 <p>Como se puede observar, esta tabla no está en 1FN puesto que el campo Teléfonos contiene varios datos dentro de una misma celda y por tanto no es un campo cuyos valores sean atómicos. La solución sería la siguiente:</p>
-<table class="docutils align-default" id="id5">
-<caption><span class="caption-text">Alumnos</span><a class="headerlink" href="#id5" title="Enlace permanente a esta tabla">¶</a></caption>
+<table class="docutils align-default" id="id4">
+<caption><span class="caption-text">Alumnos</span><a class="headerlink" href="#id4" title="Enlace permanente a esta tabla">¶</a></caption>
 <colgroup>
 <col style="width: 14%" />
 <col style="width: 14%" />
@@ -611,8 +609,8 @@ Ejemplo: CursoBachillerato →→ Modalidad. Para primer curso siempre va a apar
 </tr>
 </tbody>
 </table>
-<table class="docutils align-default" id="id6">
-<caption><span class="caption-text">Teléfonos</span><a class="headerlink" href="#id6" title="Enlace permanente a esta tabla">¶</a></caption>
+<table class="docutils align-default" id="id5">
+<caption><span class="caption-text">Teléfonos</span><a class="headerlink" href="#id5" title="Enlace permanente a esta tabla">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -648,8 +646,8 @@ Ejemplo: CursoBachillerato →→ Modalidad. Para primer curso siempre va a apar
 <h2><span class="section-number">2.6.2. </span>Segunda Forma Normal: 2FN<a class="headerlink" href="#segunda-forma-normal-2fn" title="Enlazar permanentemente con este título">¶</a></h2>
 <p>Una Relación esta en 2FN si y sólo si está en 1FN y todos los atributos que no forman parte de la Clave Principal tienen dependencia funcional completa de ella.</p>
 <p>Ejemplo: Seguimos con el ejemplo anterior. Trabajaremos con la siguiente tabla:</p>
-<table class="docutils align-default" id="id7">
-<caption><span class="caption-text">Alumnos</span><a class="headerlink" href="#id7" title="Enlace permanente a esta tabla">¶</a></caption>
+<table class="docutils align-default" id="id6">
+<caption><span class="caption-text">Alumnos</span><a class="headerlink" href="#id6" title="Enlace permanente a esta tabla">¶</a></caption>
 <colgroup>
 <col style="width: 14%" />
 <col style="width: 14%" />
@@ -721,8 +719,8 @@ Ejemplo: CursoBachillerato →→ Modalidad. Para primer curso siempre va a apar
 <p>A la hora de establecer la Clave Primaria de una tabla debemos escoger un atributo o conjunto de ellos de los que dependan funcionalmente el resto de atributos. Además debe ser una dependencia funcional completa.
 Si escogemos DNI como clave primaria, tenemos un atributo (Tutor) que no depende funcionalmente de él. Si escogemos Curso como clave primaria, tenemos otros atributos que no dependen de él.</p>
 <p>Si escogemos la combinación (DNI, Curso) como clave primaria, entonces sí tenemos todo el resto de atributos con dependencia funcional respecto a esta clave. Pero es una dependencia parcial, no total (salvo FechaMatrícula, donde sí existe dependencia completa).  Por tanto esta tabla no está en 2FN. La solución sería la siguiente:</p>
-<table class="docutils align-default" id="id8">
-<caption><span class="caption-text">Alumnos</span><a class="headerlink" href="#id8" title="Enlace permanente a esta tabla">¶</a></caption>
+<table class="docutils align-default" id="id7">
+<caption><span class="caption-text">Alumnos</span><a class="headerlink" href="#id7" title="Enlace permanente a esta tabla">¶</a></caption>
 <colgroup>
 <col style="width: 25%" />
 <col style="width: 25%" />
@@ -764,8 +762,8 @@ Si escogemos DNI como clave primaria, tenemos un atributo (Tutor) que no depende
 </tr>
 </tbody>
 </table>
-<table class="docutils align-default" id="id9">
-<caption><span class="caption-text">Matrículas</span><a class="headerlink" href="#id9" title="Enlace permanente a esta tabla">¶</a></caption>
+<table class="docutils align-default" id="id8">
+<caption><span class="caption-text">Matrículas</span><a class="headerlink" href="#id8" title="Enlace permanente a esta tabla">¶</a></caption>
 <colgroup>
 <col style="width: 33%" />
 <col style="width: 33%" />
@@ -800,8 +798,8 @@ Si escogemos DNI como clave primaria, tenemos un atributo (Tutor) que no depende
 </tr>
 </tbody>
 </table>
-<table class="docutils align-default" id="id10">
-<caption><span class="caption-text">Cursos</span><a class="headerlink" href="#id10" title="Enlace permanente a esta tabla">¶</a></caption>
+<table class="docutils align-default" id="id9">
+<caption><span class="caption-text">Cursos</span><a class="headerlink" href="#id9" title="Enlace permanente a esta tabla">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -828,8 +826,8 @@ Si escogemos DNI como clave primaria, tenemos un atributo (Tutor) que no depende
 <h2><span class="section-number">2.6.3. </span>Tercera Forma Normal: 3FN<a class="headerlink" href="#tercera-forma-normal-3fn" title="Enlazar permanentemente con este título">¶</a></h2>
 <p>Una Relación esta en 3FN si y sólo si está en 2FN y no existen dependencias transitivas. Todas las dependencias funcionales deben ser respecto a la clave principal.</p>
 <p>Ejemplo: Seguimos con el ejemplo anterior. Trabajaremos con la siguiente tabla:</p>
-<table class="docutils align-default" id="id11">
-<caption><span class="caption-text">Alumnos</span><a class="headerlink" href="#id11" title="Enlace permanente a esta tabla">¶</a></caption>
+<table class="docutils align-default" id="id10">
+<caption><span class="caption-text">Alumnos</span><a class="headerlink" href="#id10" title="Enlace permanente a esta tabla">¶</a></caption>
 <colgroup>
 <col style="width: 25%" />
 <col style="width: 25%" />
@@ -874,8 +872,8 @@ Si escogemos DNI como clave primaria, tenemos un atributo (Tutor) que no depende
 <p>Las dependencias funcionales existentes son las siguientes. Como podemos observar existe una dependencia funcional transitiva: DNI → Localidad → Provincia</p>
 <img alt="../_images/tema2-064.png" src="../_images/tema2-064.png" />
 <p>Para que la tabla esté en 3FN, no pueden existir dependencias funcionales transitivas. Para solucionar el problema deberemos crear una nueva tabla. El resultado es:</p>
-<table class="docutils align-default" id="id12">
-<caption><span class="caption-text">Alumnos</span><a class="headerlink" href="#id12" title="Enlace permanente a esta tabla">¶</a></caption>
+<table class="docutils align-default" id="id11">
+<caption><span class="caption-text">Alumnos</span><a class="headerlink" href="#id11" title="Enlace permanente a esta tabla">¶</a></caption>
 <colgroup>
 <col style="width: 33%" />
 <col style="width: 33%" />
@@ -910,8 +908,8 @@ Si escogemos DNI como clave primaria, tenemos un atributo (Tutor) que no depende
 </tr>
 </tbody>
 </table>
-<table class="docutils align-default" id="id13">
-<caption><span class="caption-text">Localidades</span><a class="headerlink" href="#id13" title="Enlace permanente a esta tabla">¶</a></caption>
+<table class="docutils align-default" id="id12">
+<caption><span class="caption-text">Localidades</span><a class="headerlink" href="#id12" title="Enlace permanente a esta tabla">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -931,8 +929,8 @@ Si escogemos DNI como clave primaria, tenemos un atributo (Tutor) que no depende
 </tbody>
 </table>
 <p><strong>RESULTADO FINAL</strong></p>
-<table class="docutils align-default" id="id14">
-<caption><span class="caption-text">Alumnos</span><a class="headerlink" href="#id14" title="Enlace permanente a esta tabla">¶</a></caption>
+<table class="docutils align-default" id="id13">
+<caption><span class="caption-text">Alumnos</span><a class="headerlink" href="#id13" title="Enlace permanente a esta tabla">¶</a></caption>
 <colgroup>
 <col style="width: 33%" />
 <col style="width: 33%" />
@@ -967,8 +965,8 @@ Si escogemos DNI como clave primaria, tenemos un atributo (Tutor) que no depende
 </tr>
 </tbody>
 </table>
-<table class="docutils align-default" id="id15">
-<caption><span class="caption-text">Localidades</span><a class="headerlink" href="#id15" title="Enlace permanente a esta tabla">¶</a></caption>
+<table class="docutils align-default" id="id14">
+<caption><span class="caption-text">Localidades</span><a class="headerlink" href="#id14" title="Enlace permanente a esta tabla">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -987,8 +985,8 @@ Si escogemos DNI como clave primaria, tenemos un atributo (Tutor) que no depende
 </tr>
 </tbody>
 </table>
-<table class="docutils align-default" id="id16">
-<caption><span class="caption-text">Teléfonos</span><a class="headerlink" href="#id16" title="Enlace permanente a esta tabla">¶</a></caption>
+<table class="docutils align-default" id="id15">
+<caption><span class="caption-text">Teléfonos</span><a class="headerlink" href="#id15" title="Enlace permanente a esta tabla">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -1019,8 +1017,8 @@ Si escogemos DNI como clave primaria, tenemos un atributo (Tutor) que no depende
 </tr>
 </tbody>
 </table>
-<table class="docutils align-default" id="id17">
-<caption><span class="caption-text">Matrículas</span><a class="headerlink" href="#id17" title="Enlace permanente a esta tabla">¶</a></caption>
+<table class="docutils align-default" id="id16">
+<caption><span class="caption-text">Matrículas</span><a class="headerlink" href="#id16" title="Enlace permanente a esta tabla">¶</a></caption>
 <colgroup>
 <col style="width: 33%" />
 <col style="width: 33%" />
@@ -1055,8 +1053,8 @@ Si escogemos DNI como clave primaria, tenemos un atributo (Tutor) que no depende
 </tr>
 </tbody>
 </table>
-<table class="docutils align-default" id="id18">
-<caption><span class="caption-text">Cursos</span><a class="headerlink" href="#id18" title="Enlace permanente a esta tabla">¶</a></caption>
+<table class="docutils align-default" id="id17">
+<caption><span class="caption-text">Cursos</span><a class="headerlink" href="#id17" title="Enlace permanente a esta tabla">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -1084,8 +1082,8 @@ Si escogemos DNI como clave primaria, tenemos un atributo (Tutor) que no depende
 <h2><span class="section-number">2.6.4. </span>Forma Normal de Boyce-Codd: FNBC<a class="headerlink" href="#forma-normal-de-boyce-codd-fnbc" title="Enlazar permanentemente con este título">¶</a></h2>
 <p>Una Relación esta en FNBC si está en 3FN y no existe solapamiento de claves candidatas. Solamente hemos de tener en cuenta esta forma normal cuando tenemos varias claves candidatas compuestas y existe solapamiento entre ellas. Pocas veces se da este caso.</p>
 <p>Ejemplo: Tenemos una tabla con información de proveedores, códigos de piezas y cantidades de esa pieza que proporcionan los proveedores. Cada proveedor tiene un nombre único. Los datos son:</p>
-<table class="docutils align-default" id="id19">
-<caption><span class="caption-text">Suministros</span><a class="headerlink" href="#id19" title="Enlace permanente a esta tabla">¶</a></caption>
+<table class="docutils align-default" id="id18">
+<caption><span class="caption-text">Suministros</span><a class="headerlink" href="#id18" title="Enlace permanente a esta tabla">¶</a></caption>
 <colgroup>
 <col style="width: 25%" />
 <col style="width: 25%" />
@@ -1146,8 +1144,8 @@ Si escogemos DNI como clave primaria, tenemos un atributo (Tutor) que no depende
 </ul>
 <p>Existe también una dependencia funcional en doble sentido (que no nos afecta): NombreProveedor &lt;-&gt; CIFProveedor.</p>
 <p>Para esta tabla existe un solapamiento de 2 claves candidatas compuestas. Para evitar el solapamiento de claves candidatas dividimos la tabla. La solución es:</p>
-<table class="docutils align-default" id="id20">
-<caption><span class="caption-text">Proveedores</span><a class="headerlink" href="#id20" title="Enlace permanente a esta tabla">¶</a></caption>
+<table class="docutils align-default" id="id19">
+<caption><span class="caption-text">Proveedores</span><a class="headerlink" href="#id19" title="Enlace permanente a esta tabla">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -1169,8 +1167,8 @@ Si escogemos DNI como clave primaria, tenemos un atributo (Tutor) que no depende
 </tr>
 </tbody>
 </table>
-<table class="docutils align-default" id="id21">
-<caption><span class="caption-text">Suministros</span><a class="headerlink" href="#id21" title="Enlace permanente a esta tabla">¶</a></caption>
+<table class="docutils align-default" id="id20">
+<caption><span class="caption-text">Suministros</span><a class="headerlink" href="#id20" title="Enlace permanente a esta tabla">¶</a></caption>
 <colgroup>
 <col style="width: 33%" />
 <col style="width: 33%" />
@@ -1218,8 +1216,8 @@ Si escogemos DNI como clave primaria, tenemos un atributo (Tutor) que no depende
 <h2><span class="section-number">2.6.5. </span>Cuarta Forma Normal: 4FN<a class="headerlink" href="#cuarta-forma-normal-4fn" title="Enlazar permanentemente con este título">¶</a></h2>
 <p>Una Relación esta en 4FN si y sólo si está en 3FN (o FNBC) y las únicas dependencias  multivaluadas son aquellas que dependen de las claves candidatas.</p>
 <p>Ejemplo: Tenemos una tabla con la información de nuestros alumnos y alumnas y las asignaturas que cursan así como los deportes que practican.</p>
-<table class="docutils align-default" id="id22">
-<caption><span class="caption-text">Alumnado</span><a class="headerlink" href="#id22" title="Enlace permanente a esta tabla">¶</a></caption>
+<table class="docutils align-default" id="id21">
+<caption><span class="caption-text">Alumnado</span><a class="headerlink" href="#id21" title="Enlace permanente a esta tabla">¶</a></caption>
 <colgroup>
 <col style="width: 33%" />
 <col style="width: 33%" />
@@ -1242,8 +1240,8 @@ Si escogemos DNI como clave primaria, tenemos un atributo (Tutor) que no depende
 </tr>
 </tbody>
 </table>
-<table class="docutils align-default" id="id23">
-<caption><span class="caption-text">Alumnado</span><a class="headerlink" href="#id23" title="Enlace permanente a esta tabla">¶</a></caption>
+<table class="docutils align-default" id="id22">
+<caption><span class="caption-text">Alumnado</span><a class="headerlink" href="#id22" title="Enlace permanente a esta tabla">¶</a></caption>
 <colgroup>
 <col style="width: 33%" />
 <col style="width: 33%" />
@@ -1290,8 +1288,8 @@ Por tanto existen dos dependencias multivaluadas:</p>
 </ul>
 <p>Por otro lado no existe ninguna dependencia entre la asignatura cursada y el deporte practicado.
 Para normalizar a 4FN creamos 2 tablas:</p>
-<table class="docutils align-default" id="id24">
-<caption><span class="caption-text">EstudiaAsignatura</span><a class="headerlink" href="#id24" title="Enlace permanente a esta tabla">¶</a></caption>
+<table class="docutils align-default" id="id23">
+<caption><span class="caption-text">EstudiaAsignatura</span><a class="headerlink" href="#id23" title="Enlace permanente a esta tabla">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -1313,8 +1311,8 @@ Para normalizar a 4FN creamos 2 tablas:</p>
 </tr>
 </tbody>
 </table>
-<table class="docutils align-default" id="id25">
-<caption><span class="caption-text">PracticaDeporte</span><a class="headerlink" href="#id25" title="Enlace permanente a esta tabla">¶</a></caption>
+<table class="docutils align-default" id="id24">
+<caption><span class="caption-text">PracticaDeporte</span><a class="headerlink" href="#id24" title="Enlace permanente a esta tabla">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -1355,8 +1353,8 @@ Ejemplo: Tenemos una tabla con varios proveedores que nos proporcionan piezas pa
 <ul class="simple">
 <li><p>Proveedor →→ Pieza →→ Proyecto →→ Proveedor (nuevamente)</p></li>
 </ul>
-<table class="docutils align-default" id="id26">
-<caption><span class="caption-text">Suministros</span><a class="headerlink" href="#id26" title="Enlace permanente a esta tabla">¶</a></caption>
+<table class="docutils align-default" id="id25">
+<caption><span class="caption-text">Suministros</span><a class="headerlink" href="#id25" title="Enlace permanente a esta tabla">¶</a></caption>
 <colgroup>
 <col style="width: 33%" />
 <col style="width: 33%" />
@@ -1383,8 +1381,8 @@ Ejemplo: Tenemos una tabla con varios proveedores que nos proporcionan piezas pa
 </tr>
 </tbody>
 </table>
-<table class="docutils align-default" id="id27">
-<caption><span class="caption-text">Suministros</span><a class="headerlink" href="#id27" title="Enlace permanente a esta tabla">¶</a></caption>
+<table class="docutils align-default" id="id26">
+<caption><span class="caption-text">Suministros</span><a class="headerlink" href="#id26" title="Enlace permanente a esta tabla">¶</a></caption>
 <colgroup>
 <col style="width: 33%" />
 <col style="width: 33%" />
@@ -1512,8 +1510,8 @@ Ejemplo: Tenemos una tabla con varios proveedores que nos proporcionan piezas pa
 </tbody>
 </table>
 <p>Descomponemos la tabla en 3 tabla nuevas:  Proveedor-Pieza, Pieza-Proyecto, Proyecto-Proveedor.</p>
-<table class="docutils align-default" id="id28">
-<caption><span class="caption-text">Proveedor-Pieza</span><a class="headerlink" href="#id28" title="Enlace permanente a esta tabla">¶</a></caption>
+<table class="docutils align-default" id="id27">
+<caption><span class="caption-text">Proveedor-Pieza</span><a class="headerlink" href="#id27" title="Enlace permanente a esta tabla">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -1568,8 +1566,8 @@ Ejemplo: Tenemos una tabla con varios proveedores que nos proporcionan piezas pa
 </tr>
 </tbody>
 </table>
-<table class="docutils align-default" id="id29">
-<caption><span class="caption-text">Pieza-Proyecto</span><a class="headerlink" href="#id29" title="Enlace permanente a esta tabla">¶</a></caption>
+<table class="docutils align-default" id="id28">
+<caption><span class="caption-text">Pieza-Proyecto</span><a class="headerlink" href="#id28" title="Enlace permanente a esta tabla">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -1618,8 +1616,8 @@ Ejemplo: Tenemos una tabla con varios proveedores que nos proporcionan piezas pa
 </tr>
 </tbody>
 </table>
-<table class="docutils align-default" id="id30">
-<caption><span class="caption-text">Proyecto-Proveedor</span><a class="headerlink" href="#id30" title="Enlace permanente a esta tabla">¶</a></caption>
+<table class="docutils align-default" id="id29">
+<caption><span class="caption-text">Proyecto-Proveedor</span><a class="headerlink" href="#id29" title="Enlace permanente a esta tabla">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />

@@ -1,14 +1,15 @@
-INTRODUCCIÓN
+ELEMENTOS DE UN ENTORNO DESARROLLO
 ==============================================
 
-En este tema veremos como hacer el diseño conceptual y lógico de una base de datos. 
-Empezaremos elaborando el modelo conceptual usando diagramas Entidad-Relación y Entidad-Relación extendidos. Este diseño es de más alto nivel, más próximo al usuario y más alejado del diseño físico de la BD.
-A continuación, a partir del modelo Entidad-Relación, procederemos a generar el modelo relacional, el cual ya se halla muy próximo al modelo físico de BD. Veremos las reglas de transformación que hemos de seguir para ello.
-Por último deberemos normalizar las tablas obtenidas para evitar redundancias.
-Resumiendo, los 2 modelos lógicos, de mayor a menor nivel de abstracción, que veremos en este tema son:
+Elementos necesarios para una aplicación web (servidor o local):
 
-- **Modelo Entidad-Relación (extendido)**
-- **Modelo Relacional**
+- **Servidor Web**: IIS (Sólo para Windows), Apache, Nginx, etc. 	
+
+- **Instalar servidor de aplicaciones web**: qué tipo de lenguaje se va a utilizar: PHP, Java, Python, .Net, JavaScript, etc. Existen varios ejemplos: Apache tiene que tener el módulo PHP activado, Tomcat EE para Java EE, Node.js para Javascript, etc.
+
+- **Instalar un servidor de bases de datos o SGBD**: MySQL, MariaDB, Oracle DB, Postgre, etc.
+
+- **Conector de BDD:** es necesario instalar también módulos para que el lenguaje de Servidor se comunique con los Datos: php-msyql, ODBC para .Net, JDBC para Java, etc.
 
 En el siguiente tema, realizaremos el diseño físico de la BD a partir del modelo relacional.
 
